@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Email confirmed · Ijtiaz Med</title>
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+:root { --bg:#F4F5F8; --card:#FFFFFF; --ink:#0F1E3D; --ink2:#4A556B; --line:#E1E4EB; --gold:#D4A23A; --btn:#0F1E3D; --btnink:#FFFFFF; --ok:#1E7B4F; --warn:#9A6A00; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0B1428; --card:#13203F; --ink:#F2F4F8; --ink2:#B4BCCB; --line:#26355A; --btn:#D4A23A; --btnink:#0F1E3D; --ok:#5FCB97; --warn:#E9C46A; color-scheme: dark; } }
+* { box-sizing: border-box; }
+html, body { margin:0; }
+body { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px 16px; background:var(--bg); color:var(--ink); font-family:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif; font-size:17px; line-height:1.6; }
+main { width:100%; max-width:440px; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:32px 24px; text-align:center; }
+.brand { display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:24px; font-weight:600; font-size:18px; }
+.brand svg { width:40px; height:40px; }
+.mark { width:56px; height:56px; border-radius:50%; margin:0 auto 16px; display:flex; align-items:center; justify-content:center; border:2px solid currentColor; color:var(--ok); }
+.bad .mark { color:var(--warn); }
+h1 { font-size:24px; line-height:1.3; margin:0 0 12px; text-wrap:balance; }
+p { margin:0 0 16px; color:var(--ink2); }
+.btn { display:block; margin:24px 0 12px; padding:14px 20px; border-radius:12px; background:var(--btn); color:var(--btnink); font-weight:600; text-decoration:none; }
+.hint { font-size:14px; margin:0; }
+footer { max-width:440px; margin-top:20px; text-align:center; font-size:13px; line-height:1.5; color:var(--ink2); }
+footer a { color:inherit; }
+[hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<main id="box">
+  <div class="brand"><svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true"><rect width="56" height="56" rx="14" fill="#0F1E3D"/><path d="M14 38h9v-8h9v-8h10" fill="none" stroke="#D4A23A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="42" cy="22" r="4" fill="#D4A23A"/></svg><span>Ijtiaz Med</span></div>
+  <div id="ok">
+    <div class="mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+    <h1>Email confirmed</h1>
+    <p>Your email address is confirmed. Go back to the Ijtiaz Med app and sign in with your email and password.</p>
+  </div>
+  <div id="bad" hidden>
+    <div class="mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 7v6M12 17h.01"/></svg></div>
+    <h1>This link has already been used or has expired</h1>
+    <p>If you have already confirmed your email, just open the Ijtiaz Med app and sign in. If the app says your email is not confirmed, create the account again in the app with the same email and password to get a new link.</p>
+  </div>
+  <div id="app" hidden>
+    <a class="btn" id="open" href="ijtiaz://account?mode=signin">Open the app</a>
+    <p class="hint">If the button does nothing, open Ijtiaz Med from your home screen.</p>
+  </div>
+</main>
+<footer>Ijtiaz Med is an independent study app. It is not affiliated with or endorsed by any licensing authority or exam provider.<br><a href="https://ijtiazmed.com/">ijtiazmed.com</a></footer>
+<script>
+(function () {
+  // The sign-up link ends here. If the link was expired or already used, the address carries "error=...".
+  var all = (location.search + '&' + location.hash.replace('#', '')).toLowerCase();
+  var failed = all.indexOf('error=') !== -1 || all.indexOf('error_code=') !== -1;
+  // Remove the one-time code from the address bar and the browser history.
+  try { history.replaceState(null, '', location.pathname); } catch (e) {}
+  if (failed) {
+    document.getElementById('ok').hidden = true;
+    document.getElementById('bad').hidden = false;
+    document.getElementById('box').className = 'bad';
+  }
+  var ua = navigator.userAgent || '';
+  var android = /Android/i.test(ua), ios = /iPhone|iPad|iPod/i.test(ua);
+  if (android || ios) document.getElementById('app').hidden = false;
+  // Android: try to open the app straight away. (On iPhone a failed try shows an error box, so there it is the button only.)
+  if (android && !failed) setTimeout(function () { location.href = 'ijtiaz://account?mode=signin'; }, 700);
+})();
+</script>
+</body>
+</html>

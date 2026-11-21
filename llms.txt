@@ -1,0 +1,34 @@
+# Ijtiaz Med (اجتياز الطبي)
+
+> Free exam-prep app for Gulf healthcare licensing exams: 6,000+ practice questions for nursing, pharmacy, physiotherapy and laboratory, for Saudi Arabia (SCFHS), Qatar (DHP) and Dubai (DHA). Independent; not affiliated with any regulator or Prometric. Run by Ijtiaz Med, Qatar. Contact: ijtiazmed@gmail.com
+
+The app includes mock exams in each exam's format, an explanation and source for every answer, and an AI tutor (5 messages a day with a free account) that answers only from the question's explanation and source.
+
+The exam guides below are checked against each regulator's official documents and link to them.
+
+## Exam guides
+- [Saudi Nursing Licensure Exam (SNLE)](https://ijtiazmed.com/exams/snle.html): SNLE format, pass mark and blueprint: 200 questions in 2 parts, pass score 500/800, and each nursing domain's weight. Checked against SCFHS.
+- [Saudi Pharmacist Licensure Exam (SPLE)](https://ijtiazmed.com/exams/sple.html): SPLE format, pass mark and blueprint: 200 questions in 2 parts, pass score 536/800, and each pharmacy domain's weight. Checked against SCFHS.
+- [Saudi Laboratory Licensure Exam (SLLE)](https://ijtiazmed.com/exams/slle.html): SLLE format, pass mark and blueprint for laboratory specialists: 200 questions in 2 parts and the official weight range of all 9 lab domains.
+- [SCFHS Physiotherapy Exam](https://ijtiazmed.com/exams/saudi-physiotherapy.html): SCFHS physiotherapy specialist exam: 150 questions in 3 hours, 60% pass mark, and the weight of all 10 physiotherapy domains.
+- [Qatar DHP Registered General Nurse Exam](https://ijtiazmed.com/exams/qatar-dhp-nurse.html): Qatar DHP (formerly QCHP) nurse exam: 150 questions in 3 hours, 50% pass mark, unlimited attempts, and the number of questions per nursing domain.
+- [Qatar National Pharmacist Qualifying Exam (NPQE)](https://ijtiazmed.com/exams/qatar-dhp-pharmacist.html): Qatar pharmacist exam (NPQE): 150 questions in 3 hours, 60% pass mark, unlimited attempts, questions per domain and the Qatar-specific references.
+- [Qatar DHP Physiotherapist Exam](https://ijtiazmed.com/exams/qatar-dhp-physiotherapist.html): Qatar DHP (formerly QCHP) physiotherapist exam: 150 questions in 3 hours, 50% pass mark, unlimited attempts, and questions in each of the 10 domains.
+- [Qatar DHP Laboratory Technologist Exam](https://ijtiazmed.com/exams/qatar-dhp-lab-technologist.html): Qatar DHP lab technologist exam: 150 questions in 3 hours, 50% pass mark, unlimited attempts, and the questions in each of the 9 lab domains.
+- [DHA Registered Nurse Exam (RNT0312)](https://ijtiazmed.com/exams/dha-nurse.html): DHA Registered Nurse exam (RNT0312): 150 questions in 3 hours, 50% pass mark, USD 240, 3 attempts, and the 4 content areas.
+- [DHA Pharmacist Exam (PHO5481)](https://ijtiazmed.com/exams/dha-pharmacist.html): DHA Pharmacist exam (PHO5481): 150 questions in 3 hours, 60% pass mark, USD 240, 3 attempts, all 14 content areas and current UAE pharmacy law.
+- [DHA Physiotherapist Exam (PHY5121)](https://ijtiazmed.com/exams/dha-physiotherapist.html): DHA Physiotherapist exam (PHY5121): 150 questions in 3 hours, 50% pass mark, USD 240, 3 attempts, and the 10 physiotherapy content areas.
+- [DHA Medical Laboratory Technologist Exam (LAB5631)](https://ijtiazmed.com/exams/dha-lab-technologist.html): DHA Lab Technologist exam (LAB5631): 150 questions in 3 hours, 50% pass mark, USD 240, 3 attempts, and the 9 content areas.
+
+## Comparison
+- [Saudi vs Qatar vs Dubai exams compared](https://ijtiazmed.com/exams/compare.html)
+
+## App
+- [Home](https://ijtiazmed.com/)
+- [Support and FAQ](https://ijtiazmed.com/support.html)
+- [Privacy Policy](https://ijtiazmed.com/privacy.html)
+- [Terms of Use](https://ijtiazmed.com/terms.html)
+
+## Arabic
+- [الصفحة الرئيسية بالعربية](https://ijtiazmed.com/ar/)
+- [أدلة الاختبارات](https://ijtiazmed.com/ar/exams/)
